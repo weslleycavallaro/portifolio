@@ -1,0 +1,217 @@
+/* Reset e estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* titulos */
+h1, h2, h3 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+.main-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+}
+
+.main-content h3 {
+    font-size: 1.3rem;
+    color: #00bcd4;
+    letter-spacing: 1px;
+}
+
+/* navegação */
+header {
+    background-color: #252525;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+/* main */
+.main {
+    height: 78vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #252525;
+    padding: 2rem;
+}
+
+.destaque {
+    color: #00bcd4;
+}
+
+/* projetos */
+section {
+    padding: 5rem 2rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #00bcd4;
+}
+
+.sobre-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projeto-card {
+    background-color: #252525;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.projeto-card img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+}
+
+.projeto-card h3 {
+    color: #00bcd4;
+    margin-bottom: 1rem;
+}
+
+/* contato */
+#contato {
+    background-color: #00bcd4;
+}
+
+.contato-content {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.contato-content p {
+    margin-bottom: 2rem;
+    color: #252525;
+}
+
+#contato h2 {
+    color: #252525;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-button.linkedin {
+    background-color: #0077b5;
+    color: white;
+}
+
+.social-button.github {
+    background-color: #333;
+    color: white;
+}
+
+.social-button i {
+    font-size: 1.5rem;
+}
+
+/* rodapé */
+footer {
+    background-color: #252525;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .main-content h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 3rem 1rem;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-button {
+        width: 80%;
+        justify-content: center;
+    }
+} 
