@@ -13,6 +13,7 @@ body {
 }
 
 /* titulos */
+
 h1, h2, h3 {
     font-family: 'Space Mono', monospace;
     font-weight: 700;
@@ -31,6 +32,7 @@ h1, h2, h3 {
 }
 
 /* navegação */
+
 header {
     background-color: #252525;
     padding: 1rem 0;
@@ -60,6 +62,7 @@ nav a:hover {
 }
 
 /* main */
+
 .main {
     height: 78vh;
     display: flex;
@@ -75,6 +78,7 @@ nav a:hover {
 }
 
 /* projetos */
+
 section {
     padding: 5rem 2rem;
 }
@@ -125,7 +129,51 @@ h2 {
     margin-bottom: 1rem;
 }
 
+/* tecnologias */
+
+.tecnologias {
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tecnologias-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.tecnologias-table {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 2rem;
+    border-spacing: 2rem;
+    border-collapse: separate;
+    margin: 0 auto;
+}
+
+.tecnologias-table td {
+    text-align: center;
+    padding: 1rem;
+}
+
+.tecnologias-table img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.tecnologias-table img:hover {
+    transform: scale(1.1);
+}
+
 /* contato */
+
 #contato {
     background-color: #00bcd4;
 }
@@ -133,6 +181,8 @@ h2 {
 .contato-content {
     text-align: center;
     font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .contato-content p {
@@ -181,8 +231,65 @@ h2 {
 .social-button i {
     font-size: 1.5rem;
 }
+.contato-form {
+    background-color: #252525;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #00bcd4;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ffffff;
+}
+
+.submit-button {
+    background-color: #00bcd4;
+    color: #252525;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 /* rodapé */
+
 footer {
     background-color: #252525;
     text-align: center;
@@ -214,4 +321,19 @@ footer {
         width: 80%;
         justify-content: center;
     }
-} 
+
+    .tecnologias-table {
+        border-spacing: 1rem;
+        padding: 1rem;
+    }
+
+    .tecnologias-table img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contato-form {
+        padding: 1.5rem;
+    }
+
+}
